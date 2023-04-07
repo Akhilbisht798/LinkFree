@@ -18,7 +18,7 @@ export default function EventCard({ event, username }) {
 
   return (
     <li
-      className="py-4 border-l-3 mb-4 pl-2 rounded-lg shadow-lg transition duration-350 hover:scale-[.99] hover:shadow-sm duration-500 ease-in-out"
+      className="py-4 border-l-3 mb-4 pl-2 rounded-lg shadow-lg" 
       style={{
         borderColor: event.color,
       }}
@@ -43,7 +43,7 @@ export default function EventCard({ event, username }) {
                   key={event.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-lg lg:text-xl tracking-wide font-medium capitalize"
+                  className="text-lg lg:text-xl tracking-wide font-medium capitalize hover:text-blue-700 underline"
                 >
                   {event.name}
                 </Link>
